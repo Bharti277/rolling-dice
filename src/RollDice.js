@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DiceComp from "./DiceComp";
+import "./RollDice.css";
 
 function RollDice() {
   const dice_num = ["one", "two", "three", "four", "five", "six"];
