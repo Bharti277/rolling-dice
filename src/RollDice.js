@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import DiceComp from "./DiceComp";
-import "./RollDice.css";
 
 function RollDice() {
   const dice_num = ["one", "two", "three", "four", "five", "six"];
@@ -16,10 +15,12 @@ function RollDice() {
     setDieTwo(dice_num[dice2]);
   };
   return (
-    <div className="rolldice">
+    <div className="">
+      <div className="dice-row">
       <DiceComp diceNum={dieOne} />
       <DiceComp diceNum={dieTwo} />
-      <button onClick={rollDice}>Roll Dice!</button>
+      </div>
+      <button className="bg-stone-500 p-6 rounded-2xl" onClick={rollDice}>Roll Dice!</button>
     </div>
   );
 }
