@@ -20,7 +20,7 @@ function RollDice() {
       <DiceComp diceNum={dieOne} />
       <DiceComp diceNum={dieTwo} />
       </div>
-      <button className="bg-stone-500 p-6 rounded-2xl" onClick={rollDice}>Roll Dice!</button>
+      <button className="p-6 bg-stone-500 rounded-2xl" onClick={rollDice}>Roll Dice!</button>
     </div>
   );
 }
